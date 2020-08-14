@@ -1,0 +1,21 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {
+    "no-case-declarations": false,
+    "max-line-length": {
+      "options": [120]
+    },
+    "@typescript-eslint/no-unused-vars": false
+  },
+  "rules": {
+    "no-case-declarations": false,
+    "max-line-length": {
+      "options": [120]
+    },
+    "@typescript-eslint/no-unused-vars": false
+  },
+  "rulesDirectory": []
+}

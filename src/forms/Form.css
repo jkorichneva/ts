@@ -1,0 +1,20 @@
+.form_theme-dark {
+    background: #545454;
+    color: #efefef;
+}
+
+.form {
+    height: 100%;
+    width: 100%;
+    padding: 60px 40px;
+}
+
+.form .switcher {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
+.form .button {
+    margin-top: 20px;
+}

@@ -1,0 +1,40 @@
+.button {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-out;
+    padding: 0 20px;
+}
+
+.button:hover,
+.button:focus {
+    opacity: 0.8;
+}
+
+.button_size-s {
+    height: 40px;
+    font-size: 14px;
+}
+
+.button_size-m {
+    height: 50px;
+    font-size: 21px;
+}
+
+.button_size-l {
+    height: 60px;
+    font-size: 26px;
+}
+
+.button_light {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.button_dark {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+}
