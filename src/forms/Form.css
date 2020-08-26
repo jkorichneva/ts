@@ -1,12 +1,15 @@
-.form_theme-dark {
-    background: #545454;
-    color: #efefef;
-}
-
 .form {
     height: 100%;
     width: 100%;
     padding: 60px 40px;
+    background-color: white;
+    transition: background-color 0.5s ease-out;
+    box-sizing: border-box;
+}
+
+.form_theme-dark {
+    background-color: #545454;
+    color: #efefef;
 }
 
 .form .switcher {

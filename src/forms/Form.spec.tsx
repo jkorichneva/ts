@@ -12,6 +12,7 @@ beforeEach(() => {
 });
 
 afterEach(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
     // @ts-ignore
     document.body.removeChild(container);
     container = null;
@@ -21,4 +22,5 @@ test('renders Form', () => {
     act(() => {
         ReactDOM.render(<Form />, container);
     });
+    expect(container).toMatchSnapshot();
 });

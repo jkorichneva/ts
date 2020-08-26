@@ -1,4 +1,4 @@
-import React,{ ChangeEvent } from 'react';
+import React,{ ChangeEventHandler } from 'react';
 
 export default interface InputInterface {
     value?: string|number;
@@ -6,5 +6,5 @@ export default interface InputInterface {
     type: string;
     theme?: string;
     size?: string;
-    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange: ChangeEventHandler<HTMLInputElement>;
 }

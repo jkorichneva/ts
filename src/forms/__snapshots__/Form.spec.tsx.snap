@@ -1,3 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Form 1`] = `ShallowWrapper {}`;
+exports[`renders Form 1`] = `
+<div>
+  <div
+    class="form form_theme-light"
+  >
+    <div
+      class="switcher"
+    >
+      <label
+        class="switcher_switch"
+      >
+        <input
+          type="checkbox"
+        />
+        <span
+          class="switcher_slider"
+        />
+      </label>
+      Dark Mode
+    </div>
+    <input
+      class="input input_light input_size-m"
+      placeholder="Surname"
+      type="text"
+      value=""
+    />
+    <input
+      class="input input_light input_size-m"
+      placeholder="Name"
+      type="text"
+      value=""
+    />
+    <input
+      class="input input_light input_size-m"
+      placeholder="Job"
+      type="text"
+      value=""
+    />
+    <input
+      class="input input_light input_size-m"
+      placeholder="Phone number"
+      type="tel"
+      value=""
+    />
+    <button
+      class="button button_light button_size-m"
+    >
+      Apply
+    </button>
+  </div>
+</div>
+`;

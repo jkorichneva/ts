@@ -5,6 +5,12 @@
     border-radius: 5px;
     transition: opacity 0.3s ease-out;
     padding: 0 20px;
+    min-width: 150px;
+}
+
+.button svg {
+    width: 100px;
+    height: 44px;
 }
 
 .button:hover,
