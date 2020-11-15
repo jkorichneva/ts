@@ -1,0 +1,41 @@
+.input {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    margin-top: 20px;
+}
+
+.input:hover,
+.input:focus {
+    border-color: #999;
+}
+
+.input_size-s {
+    height: 40px;
+    font-size: 16px;
+}
+
+.input_size-m {
+    height: 50px;
+    font-size: 21px;
+}
+
+.input_size-l {
+    height: 60px;
+    font-size: 26px;
+}
+
+.input_dark {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.input_dark::placeholder {
+    color: #ccc;
+}
