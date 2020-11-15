@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { mount } from 'enzyme';
 import { act } from 'react-dom/test-utils';
-import Form from './Form';
+import Form from '../Form';
 
 let container: HTMLElement|null;
 

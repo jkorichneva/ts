@@ -1,7 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useState } from 'react';
 import logo from './logo.svg';
-import Form from './forms/Form';
+import Form from './FormApp/Form';
+import Cubes from './AnimateApp/Cubes';
+import Loader from './AnimateApp/Loader';
 import './App.css';
 
 /**
@@ -24,10 +26,28 @@ function App(): JSX.Element {
                     >
             To Form
                     </div>
+                    <div
+                        className="App-link"
+                        onClick={(): void => setStep(2)}
+                    >
+                        Animations
+                    </div>
+                    <div
+                        className="App-link"
+                        onClick={(): void => setStep(3)}
+                    >
+                        Loader
+                    </div>
                 </header>
             )}
             {step === 1 && (
                 <Form />
+            )}
+            {step === 2 && (
+                <Cubes />
+            )}
+            {step === 3 && (
+                <Loader />
             )}
         </div>
     );

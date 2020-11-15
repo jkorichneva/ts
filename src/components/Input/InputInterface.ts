@@ -1,4 +1,4 @@
-import React,{ ChangeEventHandler } from 'react';
+import React,{ FormEventHandler } from 'react';
 
 export default interface InputInterface {
     value?: string|number;
@@ -6,5 +6,5 @@ export default interface InputInterface {
     type: string;
     theme?: string;
     size?: string;
-    onChange: ChangeEventHandler<HTMLInputElement>;
+    onChange: FormEventHandler<HTMLInputElement>;
 }

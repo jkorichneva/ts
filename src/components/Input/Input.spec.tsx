@@ -8,7 +8,7 @@ test('renders Input', () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-test('should change Input', async () => {
+test('should change Input', () => {
     const spy = jest.fn();
     const wrapper = mount(<Input  onChange={spy} placeholder="Инпут" type="text" />);
     const input = wrapper.find('input');

@@ -1,0 +1,180 @@
+:root {
+    --ringColor: #e7305b;
+    --whiteColor: #ececec;
+    --ringSize: 6rem;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.loader {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whiteColor);
+    font-size: 10px;
+}
+
+.rings {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.ring {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-shadow:
+            -10px -10px 15px rgba(255, 255, 255, 0.3),
+            10px 10px 15px rgba(70, 70, 70, 0.15),
+            inset -10px -10px 15px rgba(255, 255, 255, 0.3),
+            inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+    border: 13px solid var(--whiteColor);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring1 {
+    height: calc(var(--ringSize) * 4);
+    width: calc(var(--ringSize) * 4);
+}
+
+.ring2 {
+    height: calc(var(--ringSize) * 3);
+    width: calc(var(--ringSize) * 3);
+}
+
+.ring3 {
+    height: calc(var(--ringSize) * 2);
+    width: calc(var(--ringSize) * 2);
+}
+
+.ring4 {
+    height: var(--ringSize);
+    width: var(--ringSize);
+}
+
+.ring1.mode-one { animation: glowone1 2.5s infinite ease-out }
+.ring2.mode-one { animation: glowone2 2.5s infinite ease-out }
+.ring3.mode-one { animation: glowone3 2.5s infinite ease-out }
+.ring4.mode-one { animation: glowone4 2.5s infinite ease-out }
+
+.ring1.mode-all { animation: glowall1 2.5s infinite ease-out }
+.ring2.mode-all { animation: glowall2 2.5s infinite ease-out }
+.ring3.mode-all { animation: glowall3 2.5s infinite ease-out }
+.ring4.mode-all { animation: glowall4 2.5s infinite ease-out }
+
+@keyframes glowone1 {
+    60% {
+        background-color: var(--whiteColor);
+    }
+    80% {
+        background-color: var(--ringColor);
+    }
+    100% {
+        background-color: var(--ringColor);
+    }
+}
+
+@keyframes glowone2 {
+    40% {
+        background-color: var(--whiteColor);
+    }
+    60% {
+        background-color: var(--ringColor);
+    }
+    80% {
+        background-color: var(--whiteColor);
+    }
+    100% {
+        background-color: var(--whiteColor);
+    }
+}
+
+@keyframes glowone3 {
+    20% {
+        background-color: var(--whiteColor);
+    }
+    40% {
+        background-color: var(--ringColor);
+    }
+    60% {
+        background-color: var(--whiteColor);
+    }
+    100% {
+        background-color: var(--whiteColor);
+    }
+}
+
+@keyframes glowone4 {
+    0% {
+        background-color: var(--whiteColor);
+    }
+    20% {
+        background-color: var(--ringColor);
+    }
+    80% {
+        background-color: var(--whiteColor);
+    }
+    100% {
+        background-color: var(--whiteColor);
+    }
+}
+
+
+@keyframes glowall1 {
+    60% {
+        background-color: var(--whiteColor);
+    }
+    80% {
+        background-color: var(--ringColor);
+    }
+    100% {
+        background-color: var(--ringColor);
+    }
+}
+
+@keyframes glowall2 {
+    40% {
+        background-color: var(--whiteColor);
+    }
+    60% {
+        background-color: var(--ringColor);
+    }
+    100% {
+        background-color: var(--ringColor);
+    }
+}
+
+@keyframes glowall3 {
+    20% {
+        background-color: var(--whiteColor);
+    }
+    40% {
+        background-color: var(--ringColor);
+    }
+    100% {
+        background-color: var(--ringColor);
+    }
+}
+
+@keyframes glowall4 {
+    0% {
+        background-color: var(--whiteColor);
+    }
+    20% {
+        background-color: var(--ringColor);
+    }
+    100% {
+        background-color: var(--ringColor);
+    }
+}

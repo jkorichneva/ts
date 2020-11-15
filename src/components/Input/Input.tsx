@@ -12,8 +12,8 @@ export const Input: FunctionComponent<InputInterface> =
         onChange
     }) => {
         // tslint:disable-next-line:max-line-length
-        const onChangeInput: (event: React.ChangeEvent<HTMLInputElement>) => void = (event: React.ChangeEvent<HTMLInputElement>) => {
-            event.persist();
+        const onChangeInput: (event: React.FormEvent<HTMLInputElement>) => void = (event: React.FormEvent<HTMLInputElement>) => {
+            // event.persist();
             onChange(event);
         };
         return (

@@ -1,10 +1,11 @@
+import {StateInt} from '../constants/initialState';
+
 export function getTheme(isDark: boolean ): string
 {
     return isDark ? 'dark' : 'light';
 }
 
-export function validate(field: string, value: string): boolean
-{
+export function validate(field: string, value: string): boolean {
     switch(field) {
     case 'surname':
         return /^[a-zA-Z\s-]*$/.test(value);
@@ -17,4 +18,9 @@ export function validate(field: string, value: string): boolean
     default:
         return true;
     }
+}
+
+export function validateForm(state: StateInt): boolean
+{
+    return true;
 }
